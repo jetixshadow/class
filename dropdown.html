@@ -17,6 +17,31 @@
         /* border: 1px solid; */
         list-style: none;
         width: 40%;
+        position: relative;
+      }
+      .dropdown {
+        position: absolute;
+        list-style: none;
+        width: 130px;
+        background-color: aqua;
+        top: 30px;
+        left: 20px;
+        display: none;
+      }
+      .first-drop:hover .dropdown {
+        display: block;
+      }
+      .sub-dropdown {
+        position: absolute;
+        list-style: none;
+        /* width: 130px; */
+        background-color: aqua;
+        top: 40%;
+        left: 100%;
+        display: none;
+      }
+      .services-drop:hover .sub-dropdown {
+        display: block;
       }
     </style>
   </head>
@@ -24,7 +49,24 @@
     <div class="container">
       <h1 class="logo">Amazon</h1>
       <ul class="navbar">
-        <li>Home</li>
+        <li class="first-drop">
+          Home
+          <ul class="dropdown">
+            <li>Home</li>
+            <li>About</li>
+            <li>Information</li>
+            <li class="services-drop">
+              Services
+              <ul class="sub-dropdown">
+                <li>Home</li>
+                <li>Information</li>
+                <li>About</li>
+                <li>Account</li>
+              </ul>
+            </li>
+            <li>Contact Us</li>
+          </ul>
+        </li>
         <li>About</li>
         <li>Information</li>
         <li>Contact Us</li>
