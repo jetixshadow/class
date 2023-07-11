@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: grid;
+        grid-template-rows: 70px 130px 300px 70px;
+        grid-template-columns: 25% 25% 25% 20%;
+        gap: 1.5%;
+      }
+      .demo1 {
+        background-color: aqua;
+        grid-column: 1/5;
+      }
+      .demo2 {
+        background-color: yellow;
+      }
+      .demo3 {
+        background-color: chocolate;
+        background-image: url(https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=400);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .demo4 {
+        background-color: violet;
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      .demo5 {
+        background-color: tomato;
+        grid-row: 2/4;
+        grid-column: 4/5;
+      }
+      .demo6 {
+        background-color: crimson;
+        grid-column: 1/4;
+      }
+      .demo7 {
+        background-color: lawngreen;
+        grid-column: 1/5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="demo1">Header</div>
+      <div class="demo2">Box 1</div>
+      <div class="demo3">Box 2</div>
+      <div class="demo4">Box 3</div>
+      <div class="demo5">Sidebar</div>
+      <div class="demo6">Maincontent</div>
+      <div class="demo7">Footer</div>
+    </div>
+  </body>
+</html>
